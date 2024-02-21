@@ -1,6 +1,6 @@
 window.onload = () => {
     const button = document.querySelector('button[data-action="change"]');
-    button.innerText = '?';
+    button.innerText = '<>';
     button.addEventListener('click', changeMedia); // Add event listener for changing media
 
     // Wait for the a-scene to fully load before displaying the media
