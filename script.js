@@ -14,14 +14,14 @@ var media = [
         type: 'image',
         url: './assets/Image 1.jpg', // Ensure the file name matches exactly, including case sensitivity
         scale: '12 9 1', // Adjust scale as needed
-        rotation: '0 -90 0', // Adjust rotation as needed
+        rotation: '0 90 0', // Adjust rotation as needed
         info: 'Image description here',
     },
     {
         type: 'video',
         url: './assets/Video1.mp4', // Ensure the file name matches exactly, including case sensitivity
         scale: '12 9 1', // Adjust scale as needed
-        rotation: '0 -90 0', // Adjust rotation as needed
+        rotation: '0 90 0', // Adjust rotation as needed
         info: 'Video description here',
     },
 ];
