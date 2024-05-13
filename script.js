@@ -36,9 +36,10 @@ function changeMedia() {
 function displayMedia(index) {
     let scene = document.querySelector('a-scene');
     let mediaItem = media[index]; // Get the current media item based on index
+    let lookImage = document.getElementById('look_1');
 
     // Remove any existing media before adding new
-    let existingMedia = scene.querySelector('a-image, a-video');
+    let existingMedia = scene.querySelector('a-image:not(#look_1), a-video');
     if (existingMedia) {
         existingMedia.parentNode.removeChild(existingMedia);
     }
@@ -56,7 +57,6 @@ function displayMedia(index) {
     }
 
     entity.setAttribute('position', '-25 5 0');
-    
     entity.setAttribute('rotation', mediaItem.rotation);
     entity.setAttribute('scale', mediaItem.scale);
 
@@ -65,6 +65,15 @@ function displayMedia(index) {
     // Update instructions
     const div = document.querySelector('.instructions');
     div.innerText = mediaItem.info;
+
+    // Set opposite position for the look-around cue
+    let oppositePosition = {
+        x: 25, // Invert the X position
+        y: 5, // Same Y level
+        z: 0  // Same Z level
+    };
+    lookImage.setAttribute('position', `${oppositePosition.x} ${oppositePosition.y} ${oppositePosition.z}`);
+    lookImage.setAttribute('visible', 'true'); // Make sure the SVG is visible when media changes
 }
 
 
