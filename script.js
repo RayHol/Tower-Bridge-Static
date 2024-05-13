@@ -1,11 +1,22 @@
+function setMediaSource() {
+    const lookImage = document.getElementById('look_1');
+    const userAgent = navigator.userAgent.toLowerCase();
+    if (userAgent.includes('iphone')) {
+        lookImage.setAttribute('src', './assets/look_4.png');
+        lookImage.setAttribute('material', 'transparent: true; alphaTest: 0.5;');
+    } else {
+        lookImage.setAttribute('src', './assets/Look_2.svg');
+    }
+}
+
 window.onload = () => {
+    setMediaSource(); // Set the media source based on the device
     const button = document.querySelector('button[data-action="change"]');
     button.innerText = '<>';
-    button.addEventListener('click', changeMedia); // Add event listener for changing media
+    button.addEventListener('click', changeMedia);
 
-    // Wait for the a-scene to fully load before displaying the media
     document.querySelector('a-scene').addEventListener('loaded', function () {
-        displayMedia(modelIndex); // This function places the media in the scene
+        displayMedia(modelIndex);
     });
 };
 
@@ -25,6 +36,8 @@ var media = [
         info: 'Video description here',
     },
 ];
+
+
 
 var modelIndex = 0;
 
