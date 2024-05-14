@@ -14,23 +14,25 @@ window.onload = () => {
     const button = document.querySelector('button[data-action="change"]');
     button.innerText = '<>';
     button.addEventListener('click', changeMedia);
+    
 
     document.querySelector('a-scene').addEventListener('loaded', function () {
         displayMedia(modelIndex);
     });
 };
+    const backButton = document.getElementById("backButton");
 
 var media = [
     {
         type: 'image',
-        url: './assets/02 - TowerBridge - Start.jpg', // Ensure the file name matches exactly, including case sensitivity
+        url: './assets/images/01 - TowerBridge - Start.jpg', // Ensure the file name matches exactly, including case sensitivity
         scale: '10 7 1', // Adjust scale as needed
         rotation: '0 90 0', // Adjust rotation as needed
         info: 'Tap the button to play the animation',
     },
     {
         type: 'video',
-        url: './assets/02 - TowerBridgeO.mp4', // Ensure the file name matches exactly, including case sensitivity
+        url: './assets/videos/01 - TowerBridge.mp4', // Ensure the file name matches exactly, including case sensitivity
         scale: '10 7 1', // Adjust scale as needed
         rotation: '0 90 0', // Adjust rotation as needed
         info: 'Tap the button to switch back',
@@ -88,6 +90,11 @@ function displayMedia(index) {
     lookImage.setAttribute('position', `${oppositePosition.x} ${oppositePosition.y} ${oppositePosition.z}`);
     lookImage.setAttribute('visible', 'true'); // Make sure the SVG is visible when media changes
 }
+
+// Event listener for back button click
+        backButton.addEventListener('click', () => {
+            window.location.href = 'index.html';
+        });
 
 
 

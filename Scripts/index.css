@@ -41,9 +41,30 @@ body {
     border-radius: 8px;
 }
 
-#startButton {
+#startButton1 {
     display: block;
-    margin: 32px auto;
+    margin: 10px auto;
+    margin-top: 32px;
+/*     margin-bottom: 32px;  */
+    padding: 0px 16px;
+    width: 327px;
+    height: 44px;
+    background-color: #FBD86F;
+    color: #000000;
+    border: none;
+    border-radius: 4px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 44px;
+    letter-spacing: 1.25px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+#startButton2 {
+    display: block;
+    margin: 10px auto;
 /*     margin-top: 32px; */
 /*     margin-bottom: 32px;  */
     padding: 0px 16px;
