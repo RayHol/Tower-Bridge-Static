@@ -16,7 +16,7 @@ button {
     align-items: center;
     justify-content: center;
     border: 2px solid white;
-    background-color: transparent;
+    background-color: white;
     width: 2em;
     height: 2em;
     border-radius: 100%;
@@ -34,21 +34,26 @@ button {
     font-family:'Poppins' , sans-serif;
     font-style: normal;
     font-weight: 500;
-    z-index: 999999;
+    z-index: 10;
 }
 
-* New styles for the back button */
+
 #backButton {
     position: fixed;
-  top: 20px;
+    bottom: 20px;
     left: 20px;
     width: 93px;  
     height: 44px;  
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    z-index: 11; /* Ensure the button is always on top */
+    z-index: 11; 
     background: url("../assets/Back-button.svg") no-repeat center center;
     background-size: contain;
     background-color: transparent;
 }
+
+/* #backButton {
+    background-color: red;
+    background-image: none;
+} */
