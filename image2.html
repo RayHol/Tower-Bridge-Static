@@ -28,10 +28,13 @@
   <!-- Include the custom JavaScript file for AR functionality -->
     <script src="./Scripts/script2.js"></script>
   <!-- Include the custom CSS file for styling -->
-    <link rel="stylesheet" type="text/css" href="./Scripts/style.css"/>
+    <link rel="stylesheet"  href=".\Scripts\style.css"/>
 </head>
 
+
 <body style="margin: 0; overflow: hidden;">
+  
+
     <div class="centered instructions"></div>
     <a-scene 
         vr-mode-ui="enabled: false" 
@@ -43,10 +46,19 @@
     <a-light type="directional" color="#ffffff" position="-2 4 5"></a-light>
     <a-camera rotation-reader></a-camera>
     <a-image id="look_1" position="-25 5 180" rotation="0 270 0" scale="8 2 1" visible="false"></a-image>
+    <canvas willreadfrequently="true"></canvas>
+      
+   
+      
 
 </a-scene>
+  <div>
+     <button id="backButton" onclick="window.location.href='index.html';"></button>
+  </div>
 <div class="centered">
     <button data-action="change"></button>
+     
 </div>
+  
 </body>
 </html>
