@@ -23,14 +23,14 @@ window.onload = () => {
 var media = [
     {
         type: 'image',
-        url: './assets/02 - TowerBridge - Start.jpg', // Ensure the file name matches exactly, including case sensitivity
+        url: './assets/images/02 - TowerBridge - Start.jpg', // Ensure the file name matches exactly, including case sensitivity
         scale: '10 7 1', // Adjust scale as needed
         rotation: '0 90 0', // Adjust rotation as needed
         info: 'Tap the button to play the animation',
     },
     {
         type: 'video',
-        url: './assets/02 - TowerBridgeO.mp4', // Ensure the file name matches exactly, including case sensitivity
+        url: './assets/videos/02 - TowerBridgeO.mp4', // Ensure the file name matches exactly, including case sensitivity
         scale: '10 7 1', // Adjust scale as needed
         rotation: '0 90 0', // Adjust rotation as needed
         info: 'Tap the button to switch back',
