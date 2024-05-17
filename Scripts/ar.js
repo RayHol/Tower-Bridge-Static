@@ -28,7 +28,7 @@ function initializeAR(mediaArray) {
             lookImage.setAttribute('src', './assets/Asset 3.png');
             lookImage.setAttribute('material', 'transparent: true; alphaTest: 0.5;');
         } else {
-            lookImage.setAttribute('src', './assets/Asset 1.svg');
+            lookImage.setAttribute('src', './assets/Asset 3.png');
         }
     }
 
