@@ -47,7 +47,7 @@
                 "url": "./assets/images/03 - TowerBridge - Start.jpg",
                 "scale": "10 7 1",
                 "rotation": "0 90 0",
-                "fixedAngleDegrees": 0,
+                "fixedAngleDegrees": 180,
                 "info": "Tap the button to play the animation"
             },
             {
@@ -55,7 +55,7 @@
                 "url": "./assets/videos/03 - TowerBridgeO.mp4",
                 "scale": "10 7 1",
                 "rotation": "0 90 0",
-                "fixedAngleDegrees": 0,
+                "fixedAngleDegrees": 180,
                 "info": "Tap the button to switch back"
             }
         ]
@@ -67,7 +67,7 @@
                 "url": "./assets/images/04 - TowerBridge - Start.jpg",
                 "scale": "10 7 1",
                 "rotation": "0 90 0",
-                "fixedAngleDegrees": 0,
+                "fixedAngleDegrees": 270,
                 "info": "Tap the button to play the animation"
             },
             {
@@ -75,7 +75,7 @@
                 "url": "./assets/videos/04 - TowerBridgeO.mp4",
                 "scale": "10 7 1",
                 "rotation": "0 90 0",
-                "fixedAngleDegrees": 0,
+                "fixedAngleDegrees": 270,
                 "info": "Tap the button to switch back"
             }
         ]
