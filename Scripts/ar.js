@@ -25,10 +25,10 @@ function initializeAR(mediaArray) {
         const lookImage = document.getElementById('look_1');
         const userAgent = navigator.userAgent.toLowerCase();
         if (userAgent.includes('iphone')) {
-            lookImage.setAttribute('src', './assets/look_4.png');
+            lookImage.setAttribute('src', './assets/Asset 4.png');
             lookImage.setAttribute('material', 'transparent: true; alphaTest: 0.5;');
         } else {
-            lookImage.setAttribute('src', './assets/Look_2.svg');
+            lookImage.setAttribute('src', './assets/Asset 1.svg');
         }
     }
 
